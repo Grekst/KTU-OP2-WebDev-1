@@ -24,7 +24,7 @@
             &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Pavardė yra privaloma" ForeColor="Red">*</asp:RequiredFieldValidator>
             <br />
             <br />
-            <asp:Label ID="Label8" runat="server" Text="Mokyklos pav."></asp:Label>
+            <asp:Label ID="Label3" runat="server" Text="Mokyklos pav."></asp:Label>
             <br />
             <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
             &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3" ErrorMessage="Mokyklos pavadinimas yra privalomas" ForeColor="Red">*</asp:RequiredFieldValidator>
