@@ -117,7 +117,6 @@ namespace PirmasWeb
         protected void ClearAllUserData()
         {
             cachedUserData = new List<UserRegistration>();
-            //Session["SavedUserData"] = null;
             SaveUserData();
 
             UpdateTableContents();
@@ -160,7 +159,7 @@ namespace PirmasWeb
             {
                 TableRow newRow = new TableRow();
 
-                newRow.Cells.Add(new TableCell { Text = (i + 1).ToString() }); //index cell
+                newRow.Cells.Add(new TableCell { Text = (i + 1).ToString() });
 
                 newRow.Cells.Add(new TableCell { Text = string.Format("{0} {1}", cachedUserData[i].FirstName, cachedUserData[i].LastName) });
 
