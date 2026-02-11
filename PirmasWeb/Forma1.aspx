@@ -23,6 +23,12 @@
             &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Pavardė yra privaloma" ForeColor="Red">*</asp:RequiredFieldValidator>
             <br />
             <br />
+            <asp:Label ID="Label8" runat="server" Text="Mokyklos pav."></asp:Label>
+            <br />
+            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3" ErrorMessage="Mokyklos pavadinimas yra privalomas" ForeColor="Red">*</asp:RequiredFieldValidator>
+            <br />
+            <br />
 
 
             <asp:Label ID="Label5" runat="server" Text="Amžius"></asp:Label>
@@ -50,7 +56,7 @@
             <br />
             <asp:Label ID="Label7" runat="server" Text="Registracijų sąrašas"></asp:Label>
             <br />
-            <asp:Table ID="Table1" runat="server" BorderStyle="Solid" BorderWidth="1px" Height="172px" Width="688px" GridLines="Both" HorizontalAlign="Justify">
+            <asp:Table ID="Table1" runat="server" BorderStyle="Solid" BorderWidth="1px" Height="172px" Width="895px" GridLines="Both" HorizontalAlign="Justify">
             </asp:Table>
             <br />
             <asp:Button ID="Button2" runat="server" Text="Valyti sąrašą" Width="113px" CausesValidation="False" OnClick="Button2_Click" />

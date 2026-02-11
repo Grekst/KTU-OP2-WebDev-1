@@ -13,6 +13,7 @@ namespace PirmasWeb
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string SchoolName { get; set; }
         public string Age { get; set; }
         public string Languages { get; set; }
     }
@@ -93,6 +94,7 @@ namespace PirmasWeb
                 FirstName = TextBox1.Text,
                 LastName = TextBox2.Text,
                 Age = DropDownList1.SelectedValue,
+                SchoolName = TextBox3.Text,
                 Languages = string.Join(", ", CheckBoxList1.Items.Cast<ListItem>().Where(i => i.Selected).Select(i => i.Value)),
             };
 
@@ -134,6 +136,10 @@ namespace PirmasWeb
             title.Text = "<b>Vardas/Pavardė</b>";
             row.Cells.Add(title);
 
+            TableCell schoolName = new TableCell();
+            schoolName.Text = "<b>Mokyklos pavadinimas</b>";
+            row.Cells.Add(schoolName);
+
             TableCell age = new TableCell();
             age.Text = "<b>Amžius (metai)</b>";
             row.Cells.Add(age);
@@ -162,6 +168,8 @@ namespace PirmasWeb
                 newRow.Cells.Add(new TableCell { Text = (i + 1).ToString() });
 
                 newRow.Cells.Add(new TableCell { Text = string.Format("{0} {1}", cachedUserData[i].FirstName, cachedUserData[i].LastName) });
+
+                newRow.Cells.Add(new TableCell { Text = cachedUserData[i].SchoolName });
 
                 newRow.Cells.Add(new TableCell { Text = cachedUserData[i].Age });
 
