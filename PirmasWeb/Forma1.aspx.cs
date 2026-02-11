@@ -72,6 +72,7 @@ namespace PirmasWeb
             {
                 if (!Char.IsLetter(c))
                 {
+                    Label8.Visible = true;
                     return false;
                 }
             }
@@ -80,10 +81,12 @@ namespace PirmasWeb
             {
                 if (!Char.IsLetter(c))
                 {
+                    Label8.Visible = true;
                     return false;
                 }
             }
 
+            Label8.Visible = false;
             return true;
         }
 

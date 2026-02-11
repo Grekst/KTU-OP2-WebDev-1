@@ -14,6 +14,7 @@
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Vardas yra privalomas" ForeColor="Red">*</asp:RequiredFieldValidator>
             <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
 
 
@@ -47,6 +48,8 @@
             </asp:CheckBoxList>
             <asp:XmlDataSource ID="XmlDataSource2" runat="server" DataFile="~/App_Data/kalbos.xml"></asp:XmlDataSource>
             <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" />
+            <asp:Label ID="Label8" runat="server" ForeColor="Red" Text="* Vardas/Pavardė privalo būti sudarytas tik iš raidžių." Visible="False"></asp:Label>
+            <br />
             <br />
 
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Pateikti" Width="109px" />
