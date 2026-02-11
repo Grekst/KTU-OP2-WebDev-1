@@ -159,6 +159,9 @@ namespace PirmasWeb
             Table1.Rows.Clear();
             GenerateTableHeaders();
 
+            const int defaultTableHeight = 172;
+            const int tableSetpHeight = 64;
+
             if (cachedUserData == null || cachedUserData.Count == 0) return;
 
             for (int i = 0; i < cachedUserData.Count; i++)
@@ -178,6 +181,8 @@ namespace PirmasWeb
                 Table1.Rows.Add(newRow);
 
             }
+
+            Table1.Height = defaultTableHeight + (tableSetpHeight * cachedUserData.Count);
         }
     }
 }
