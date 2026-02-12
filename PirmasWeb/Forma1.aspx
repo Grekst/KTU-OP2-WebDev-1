@@ -61,6 +61,8 @@
             <br />
             <asp:Table ID="Table1" runat="server" BorderStyle="Solid" BorderWidth="1px" Height="172px" Width="895px" GridLines="Both" HorizontalAlign="Justify">
             </asp:Table>
+            <asp:Label ID="Label9" runat="server" Text="Registrutų asmenų kiekis: "></asp:Label>
+            <br />
             <br />
             <asp:Button ID="Button2" runat="server" Text="Valyti sąrašą" Width="113px" CausesValidation="False" OnClick="Button2_Click" />
             <br />

@@ -165,6 +165,8 @@ namespace PirmasWeb
             const int defaultTableHeight = 172;
             const int tableSetpHeight = 64;
 
+            Label9.Text = "Registrutų asmenų kiekis: " + cachedUserData.Count.ToString();
+
             if (cachedUserData == null || cachedUserData.Count == 0) return;
 
             for (int i = 0; i < cachedUserData.Count; i++)
